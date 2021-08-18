@@ -15,9 +15,9 @@ resources:
     trigger:
     - main
 
-  - repository: repo3
+  - repository: CLonefromgit
     type: git
-    name: prachitrivedi/repo3
+    name: udemy/CLonefromgit
     #ref: release
     trigger:
     - main
