@@ -6,7 +6,22 @@ trigger:
 - master
 
 resources:
-- repo: self
+#- repo: self
+  repositories:
+  - repository: repo2
+    type: git
+    name: prachitrivedi/repo2
+    #ref: main
+    trigger:
+    - main
+
+  - repository: repo3
+    type: git
+    name: prachitrivedi/repo3
+    #ref: release
+    trigger:
+    - main
+    #- release
 
 variables:
   # Container registry service connection established during pipeline creation
